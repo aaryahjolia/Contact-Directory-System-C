@@ -1,299 +1,56 @@
-# Contact_Directory_System
-A Code of Contact Directory system written in C using ds like circular doubly linked list, sorting algorithms, etc.
-It shows similar system as that of on our phone.
-Made by : Aarya Ahjolia
+# Contact Directory System
 
-Fields Included :
-1. Name of contact
-2. Phone no.
-3. Mark as favourite contact or not
+A comprehensive Contact Management Application built in C, designed to efficiently manage contacts using advanced data structures. Use this application to store, organize, and retrieve contact information directly from your terminal.
 
-Functions Included :
-1. Adding a contact
-2. Removing a contact
-3. Searching a contact (which can be done by entering a char or a substring also)
-4. Display Contacts
-5. Updating details 
-6. Display Favourite Contact list
+## Overview
 
-OUTPUT :
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
+This project mimics the functionality of a standard phonebook application found on mobile devices. It is built from the ground up to demonstrate efficient memory management and data organization using a **Circular Doubly Linked List**. This choice of data structure allows for bidirectional traversal and efficient insertion/deletion operations, making the user experience smooth and responsive.
 
-Enter Choice : 1
-Enter Person Name:
-aarya ahjolia
-Enter 10 Digit Phone Number:
-222222222
-Please Enter 10 digit Number !
-Enter 10 Digit Phone Number:
-2222222222
-Add this contact to Favourite List ?
-1. Yes
-2. No
-Enter choice : 2
+## Key Features
 
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
+- **Add Contacts**: Save names and 10-digit phone numbers.
+- **Organization**: Automatically sorts contacts alphabetically by name as you add them.
+- **Search**: Find contacts quickly by name or even a partial substring (e.g., searching "John" finds "John Doe").
+- **Update Details**: Modify existing names, numbers, or toggle favorite status.
+- **Favorites List**: Quickly access your most important contacts.
+- **Delete**: Remove contacts you no longer need.
+- **Smart Formatting**: Names are automatically capitalized for a clean display.
 
-Enter Choice : 1
-Enter Person Name:
-xyz ahjolia
-Enter 10 Digit Phone Number:
-3333333333
-Add this contact to Favourite List ?
-1. Yes
-2. No
-Enter choice : 2
+## Technical Implementation
 
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
+- **Language**: C
+- **Data Structure**: Circular Doubly Linked List
+- **Algorithms**: Custom sorting for alphabetical order, substring search for queries.
 
-Enter Choice : 1
-Enter Person Name:
-the begmmer human
-Enter 10 Digit Phone Number:
-4444444444
-Add this contact to Favourite List ?
-1. Yes
-2. No
-Enter choice : 2
+## Getting Started
 
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
+### Prerequisites
+You need a C compiler (like GCC) installed on your system.
 
-Enter Choice : 3
+### Compilation
+Open your terminal and navigate to the project directory. Compile the source code using the following command:
 
-Displaying Contact Directory :
-Name : Aarya Ahjolia   , Phone No.: +91-2222222222
-Name : The Begmmer Human , Phone No.: +91-4444444444
-Name : Xyz Ahjolia     , Phone No.: +91-3333333333
+```bash
+gcc Contact_Directory_System.c -o contact_app
+```
 
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
+### Running the Application
+Once compiled, you can launch the application with:
 
-Enter Choice : 4
-Enter Person Name to Search : j
+```bash
+./contact_app
+```
 
-Found Names :
-1. Aarya Ahjolia
-2. Xyz Ahjolia
+## Usage Guide
+Upon launching, you will be presented with an interactive menu:
 
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
+1.  **Add Contact**: Follow the prompts to enter details.
+2.  **Remove Contact**: Delete entries by name.
+3.  **Show Contacts**: View your entire directory.
+4.  **Search Contacts**: Look up specific people.
+5.  **Update Details**: Edit information for existing contacts.
+6.  **Show Favourite List**: View your pinned contacts.
+7.  **Exit**: Close the application.
 
-Enter Choice : 4
-Enter Person Name to Search : the
-
-Found Names :
-1. The Begmmer Human
-
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
-
-Enter Choice : 6
-
-Displaying Favourite Contact Directory :
-No Favourite Contact is there !
-
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
-
-Enter Choice : 5
-Enter Person Name to Update : aar
-
-Found Name : aarya ahjolia
-Do you want to update this Contact ?
-1. Yes
-2. Find another contact
-1
-
-What do you want to update?
-1. Name
-2. Phone no
-3. Add/Remove from favourites
-Enter choice : 3
-
-What do you want to do?
-1. Add to Favourites
-2. Remove from favourites
-1
-Added to Favourite List Successfully !
-
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
-
-Enter Choice : 5
-Enter Person Name to Update : th
-
-Found Name : the begmmer human
-Do you want to update this Contact ?
-1. Yes
-2. Find another contact
-1
-
-What do you want to update?
-1. Name
-2. Phone no
-3. Add/Remove from favourites
-Enter choice : 3
-
-What do you want to do?
-1. Add to Favourites
-2. Remove from favourites
-1
-Added to Favourite List Successfully !
-
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
-
-Enter Choice : 6
-
-Displaying Favourite Contact Directory :
-1. Name : Aarya Ahjolia   , Phone No.: +91-2222222222
-2. Name : The Begmmer Human , Phone No.: +91-4444444444
-
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
-
-Enter Choice : 3
-
-Displaying Contact Directory :
-Name : Aarya Ahjolia   , Phone No.: +91-2222222222
-Name : The Begmmer Human , Phone No.: +91-4444444444
-Name : Xyz Ahjolia     , Phone No.: +91-3333333333
-
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
-
-Enter Choice : 2
-Enter Full Person Name to delete : (Name you entered when adding contact)
-the begmmer human
-
-Contact deleted!
-
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
-
-Enter Choice : 2
-Enter Full Person Name to delete : (Name you entered when adding contact)
-xyz ahjolia
-
-Contact deleted!
-
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
-
-Enter Choice : 3
-
-Displaying Contact Directory :
-Name : Aarya Ahjolia   , Phone No.: +91-2222222222
-
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
-
-Enter Choice : 6
-
-Displaying Favourite Contact Directory :
-1. Name : Aarya Ahjolia   , Phone No.: +91-2222222222
-
------Contact Management Application-----
-1. Add Contact
-2. Remove Contact
-3. Show Contacts
-4. Search Contacts
-5. Update Details
-6. Show Favourite List
-7. Exit
-
-Enter Choice : 7
+---
+**Author**: Aarya Ahjolia
